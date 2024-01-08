@@ -1,5 +1,5 @@
 # All rights reserves to EventPlanner(Made by Student of Softwatica College of Batch 34'A' )
-# Members
+## Members
 1. Saroj Kumar Sah(Scrum Master,Backend developer and also works with frontend developers)
 2. Bhumi Singh Subedi(Backend developer,Frontend developer head,Made Business Proposal And documentation)
 3. Prajwal Pemperenal Neupane(Frontend developer,UI/UX designer)
