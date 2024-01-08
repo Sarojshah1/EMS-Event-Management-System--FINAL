@@ -10,4 +10,7 @@ An Event Management System (EMS) is a comprehensive software solution designed t
 2. Import the EventManagementsystem.sql file to your database or manually create tables
 3. Manage Database accordingly
 4. Add dependency of mysql.connector to your project file
-   
+
+# UI Design for Event Management System
+## Login Page
+![image](https://github.com/Sarojshah1/EMS-Event-Management-System--FINAL/assets/87790861/5de957b0-bb7b-4b38-871f-bbe85fc1869a)
