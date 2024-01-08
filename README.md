@@ -1,3 +1,12 @@
+# All rights reserves to EventPlanner(Made by Student of Softwatica College of Batch 34'A' )
+# Members
+1. Saroj Kumar Sah(Scrum Master,Backend developer and also works with frontend developers)
+2. Bhumi Singh Subedi(Backend developer,Frontend developer head,Made Business Proposal And documentation)
+3. Prajwal Pemperenal Neupane(Frontend developer,UI/UX designer)
+4. Dipendra Ghimire(FrontEnd developer and UI/UX designer)
+5. Apeksha Wagle(Frontend devloper and UI/UX designer )
+
+
 # EMS-Event-Management-System--Java Swing
 An Event Management System (EMS) is a comprehensive software solution designed to facilitate the planning, organization, and execution of events. Events can range from small meetings and conferences to large-scale festivals, weddings, corporate functions, and more. The primary goal of an Event Management System is to streamline the entire event planning process, from initial conception to post-event analysis.
 
@@ -38,6 +47,9 @@ An Event Management System (EMS) is a comprehensive software solution designed t
 ![image](https://github.com/Sarojshah1/EMS-Event-Management-System--FINAL/assets/87790861/038c324b-4deb-426f-aaf5-2a0a1d6c93db)
 ### User Profile
 ![image](https://github.com/Sarojshah1/EMS-Event-Management-System--FINAL/assets/87790861/edfa8a35-c376-4401-b771-5f42e5efebdd)
+
+
+
 
 
 
