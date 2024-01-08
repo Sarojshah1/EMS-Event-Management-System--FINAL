@@ -6,7 +6,6 @@
 4. Dipendra Ghimire(FrontEnd developer and UI/UX designer)
 5. Apeksha Wagle(Frontend devloper and UI/UX designer )
 
-
 # EMS-Event-Management-System--Java Swing
 An Event Management System (EMS) is a comprehensive software solution designed to facilitate the planning, organization, and execution of events. Events can range from small meetings and conferences to large-scale festivals, weddings, corporate functions, and more. The primary goal of an Event Management System is to streamline the entire event planning process, from initial conception to post-event analysis.
 
@@ -35,8 +34,8 @@ An Event Management System (EMS) is a comprehensive software solution designed t
 19. change password in user profile to change password for users.
 20. showing user details by featching it from credentials respectibly to single user.
 21. calander for user to know about the event in calander.
-
-
+22. Total attendees for each events to know about how much seats are avlabe for the created event
+    
 # Requirement For Code Execution
 1. Create The Database To Your System(use command from EventManagementsystem.sql)
 2. Import the EventManagementsystem.sql file to your database or manually create tables
