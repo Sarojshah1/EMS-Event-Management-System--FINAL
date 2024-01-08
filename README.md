@@ -13,6 +13,22 @@ An Event Management System (EMS) is a comprehensive software solution designed t
 # Module Used
 1. Swing(for UI interface)
 2. mysql.connector (for database connection)
+# Features
+1. User registration(for both Users and Admin)
+2. User Login (for both Users and Admin)
+3. Dashboard for admin to examine (total events,total bookings and total venues) and line graph to show the total event per months
+4. report for Admin to get details on the income,Expence,profit,and cost for all events according to each months
+5. Booking for Admin to check all the bookings of the events from user side
+6. Add venue for Admin to add new venue to host events accordingly
+7. venue details for Admin to know the overall venue details
+8. Events for Admin to check all events
+9. calander for Admin and user for event calander
+10. logout button to logout from the system for both.
+11. Home page for users to get list for all events created
+12. book button to book events
+13. payment to pay the amount for tickets for events
+14. host event to users to host events the yse want
+15. Tickets is to view tickets for all events that the use booked for event.
 
 # Requirement For Code Execution
 1. Create The Database To Your System(use command from EventManagementsystem.sql)
@@ -47,6 +63,9 @@ An Event Management System (EMS) is a comprehensive software solution designed t
 ![image](https://github.com/Sarojshah1/EMS-Event-Management-System--FINAL/assets/87790861/038c324b-4deb-426f-aaf5-2a0a1d6c93db)
 ### User Profile
 ![image](https://github.com/Sarojshah1/EMS-Event-Management-System--FINAL/assets/87790861/edfa8a35-c376-4401-b771-5f42e5efebdd)
+### Payements
+![image](https://github.com/Sarojshah1/EMS-Event-Management-System--FINAL/assets/87790861/1719d3fd-1d9b-4eeb-9bb5-db6a0db3a0ec)
+
 
 
 
