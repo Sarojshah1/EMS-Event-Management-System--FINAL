@@ -1,0 +1,79 @@
+CREATE DATABASE `event_management_system` ;
+CREATE TABLE `card_details` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `card_number` varchar(15) NOT NULL,
+  `cvc` int NOT NULL,
+  `card_holder_name` varchar(40) NOT NULL,
+  `expirydate` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `credentials` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Full_Name` varchar(255) NOT NULL,
+  `contact_number` varchar(20) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` varchar(20) NOT NULL,
+  `Image` blob,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `Email` (`Email`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `customer` (
+  `id` int NOT NULL,
+  `name` varchar(40) DEFAULT NULL,
+  `phone` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `eventpost` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `EVENTID` int NOT NULL,
+  `CREATIONDATE` int DEFAULT NULL,
+  `CREATORID` int DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `FK_EVENTPOST` (`EVENTID`),
+  KEY `FK_EVENTCREATOR` (`CREATORID`),
+  CONSTRAINT `FK_EVENTCREATOR` FOREIGN KEY (`CREATORID`) REFERENCES `credentials` (`ID`),
+  CONSTRAINT `FK_EVENTPOST` FOREIGN KEY (`EVENTID`) REFERENCES `events` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `events` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `IMAGE` longblob NOT NULL,
+  `NAME` varchar(200) NOT NULL,
+  `PRICE` int NOT NULL,
+  `DESCRIPTION` text NOT NULL,
+  `PLACE` varchar(255) NOT NULL,
+  `CAPACITY` int NOT NULL,
+  `ISPUBLIC` bit(1) NOT NULL,
+  `USERID` int DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `Action` bit(1) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `FK_EVENTUSER` (`USERID`),
+  CONSTRAINT `FK_EVENTUSER` FOREIGN KEY (`USERID`) REFERENCES `credentials` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `eventticket` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `EVENTID` int DEFAULT NULL,
+  `OWNERID` int DEFAULT NULL,
+  `ISPAID` bit(1) DEFAULT NULL,
+  `PAIDDATE` datetime DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `FK_EVENTTICKET` (`EVENTID`),
+  KEY `FK_TICKETBUYER` (`OWNERID`),
+  CONSTRAINT `FK_EVENTTICKET` FOREIGN KEY (`EVENTID`) REFERENCES `events` (`ID`),
+  CONSTRAINT `FK_TICKETBUYER` FOREIGN KEY (`OWNERID`) REFERENCES `credentials` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `venues` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `NAME` varchar(255) NOT NULL,
+  `ADDRESS` varchar(255) NOT NULL,
+  `IMAGE` longblob NOT NULL,
+  `PRICE` int NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+
+
