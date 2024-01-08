@@ -13,7 +13,7 @@ An Event Management System (EMS) is a comprehensive software solution designed t
 # Module Used
 1. Swing(for UI interface)
 2. mysql.connector (for database connection)
-# Features
+# Features and Functionality
 1. User registration(for both Users and Admin)
 2. User Login (for both Users and Admin)
 3. Dashboard for admin to examine (total events,total bookings and total venues) and line graph to show the total event per months
@@ -24,11 +24,18 @@ An Event Management System (EMS) is a comprehensive software solution designed t
 8. Events for Admin to check all events
 9. calander for Admin and user for event calander
 10. logout button to logout from the system for both.
-11. Home page for users to get list for all events created
+11. Home page for users to get list of all events that going to be held
 12. book button to book events
 13. payment to pay the amount for tickets for events
 14. host event to users to host events the yse want
 15. Tickets is to view tickets for all events that the use booked for event.
+16. Storing Image and details to database of all.
+17. Fetching details and managing image size for tables in home page.
+18. user profile for users to change profile picture.
+19. change password in user profile to change password for users.
+20. showing user details by featching it from credentials respectibly to single user.
+21. calander for user to know about the event in calander.
+
 
 # Requirement For Code Execution
 1. Create The Database To Your System(use command from EventManagementsystem.sql)
