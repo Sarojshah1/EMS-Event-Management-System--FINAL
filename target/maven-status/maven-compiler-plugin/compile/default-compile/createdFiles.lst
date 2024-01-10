@@ -157,6 +157,7 @@ ViewComponent\ImageTableCellRenderer.class
 calander\ToDay.class
 View\UserDashboard.class
 Table\PanelAction$2.class
+ViewComponent\UserProfile$3.class
 calander\PanelDate$42.class
 calander\PanelDate.class
 calander\PanelDate$1.class
